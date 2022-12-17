@@ -3,24 +3,15 @@ def main():
     user_name = input("Hi, whats your name? ")
 
     print("Hey, " + user_name)
+
+    play_answers = ["yes", "YES", "Yes", "y", "Y", "ok", "OK", "Ok", "YEs", "yeS", "yea", "Yea", "sure", "Sure"]
+
     user_decision = input("Wanna play? ")
-    if("yes" in user_decision):
-        print("Awesome!")
-    elif ("ok" in user_decision):
-        print("Lets Go!")
-    elif ("Ok" in user_decision):
-        print("Lets Go!")
-    elif ("OK" in user_decision):
-        print("Lets Go!")
-    elif ("Yes" in user_decision):
-        print("Lets Go!")
-    elif ("yea" in user_decision):
-        print("Lets Go!")
-    elif ("Y" in user_decision):
-        print("Lets Go!")
-    elif ("y" in user_decision):
-        print("Lets Go!")
-    elif ("Yea" in user_decision):
+
+    # print(play_answers[ask_to_play])
+
+
+    if user_decision in str(play_answers):
         print("Lets Go!")
     else:
         print("Aw you suck")
