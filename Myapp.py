@@ -1,3 +1,7 @@
+def addTwoNumbers(firstNumber, secondNumber):
+    sum = (firstNumber + secondNumber)
+    return sum
+
 def main():
     print("Quays Game")
     user_name = input("Hi, whats your name? ")
@@ -9,7 +13,6 @@ def main():
     user_decision = input("Wanna play? ")
 
     # print(play_answers[ask_to_play])
-
 
     if user_decision in str(play_answers):
         print("Lets Go!")
@@ -45,3 +48,8 @@ def main():
 
 
 main()
+openFile= open("openFile.txt", "w")
+openFile.write("I have more question for you! Come back soon!")
+openFile.close()
+openFile= open("openFile.txt", "r")
+print(openFile.read())
